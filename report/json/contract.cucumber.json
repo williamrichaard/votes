@@ -1,0 +1,97 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Contract test with json-schema",
+    "line": 1,
+    "id": "contract-test-with-json-schema",
+    "tags": [],
+    "uri": "contract.feature",
+    "elements": [
+      {
+        "id": "contract-test-with-json-schema;requesting-from-serverest-api-and-validating-contract",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Requesting from serverest api and validating contract",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "solicitar todos os usuarios de /usuarios",
+            "result": {
+              "status": "undefined",
+              "duration": 385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "deve ser respondido o schema \"get-user\" com status 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "contract-test-with-json-schema;posting-users-on-serverest-api-and-validating-contract",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Posting users on serverest API and validating Contract",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "postar os usuarios do tipo \"invalid\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "deve ser respondido o schema \"post-user\" com status 400",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "contract-test-with-json-schema;posting-users-on-serverest-api-and-validating-contract",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Posting users on serverest API and validating Contract",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "postar os usuarios do tipo \"valid\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "deve ser respondido o schema \"post-user\" com status 201",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

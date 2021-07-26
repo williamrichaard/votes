@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Efetuar Login na ServeRest",
+    "line": 1,
+    "id": "efetuar-login-na-serverest",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "efetuar-login-na-serverest;fazer-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Fazer login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "fornecer credencial do tipo \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "deve ser respondido o schema \"post-login\" com status 400",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "efetuar-login-na-serverest;fazer-login",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Fazer login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "fornecer credencial do tipo \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "deve ser respondido o schema \"post-login\" com status 200",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

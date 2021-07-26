@@ -1,0 +1,41 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Gerenciamento dos produtos da ServeRest",
+    "line": 1,
+    "id": "gerenciamento-dos-produtos-da-serverest",
+    "tags": [],
+    "uri": "produtos.feature",
+    "elements": [
+      {
+        "id": "gerenciamento-dos-produtos-da-serverest;listar-produtos-cadastrados",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Listar produtos cadastrados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "solicitar todos os produtos de /produtos",
+            "result": {
+              "status": "undefined",
+              "duration": 359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "deve ser respondido o schema \"get-produtos\" com status 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Votes",
+    "line": 1,
+    "id": "votes",
+    "tags": [],
+    "uri": "votes.feature",
+    "elements": [
+      {
+        "id": "votes;solicitando-todos-os-votos-pertencentes-à-conta",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Solicitando todos os votos pertencentes à conta",
+        "tags": [
+          {
+            "name": "@soliciting",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "solicitar todos os votos de um usuario usando o token \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 772000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "deve ser respondido o schema \"get-votes\" com status 401",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;solicitando-todos-os-votos-pertencentes-à-conta",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Solicitando todos os votos pertencentes à conta",
+        "tags": [
+          {
+            "name": "@soliciting",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "solicitar todos os votos de um usuario usando o token \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "deve ser respondido o schema \"get-votes\" com status 200",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;postando-votos-na-api-thecatapi-e-validando-o-contrato",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Postando votos na API thecatapi e validando o contrato",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "postar os votos do tipo \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "deve ser respondido o schema \"post-votes\" com status 400",
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;postando-votos-na-api-thecatapi-e-validando-o-contrato",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Postando votos na API thecatapi e validando o contrato",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "postar os votos do tipo \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "deve ser respondido o schema \"post-votes\" com status 200",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;solicitando-um-voto-específico-pertencente-à-conta",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Solicitando um voto específico pertencente à conta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "solicitar um tipo \"invalid\" de voto da conta",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "deve ser respondido o schema \"get-vote_id\" com status 404",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;solicitando-um-voto-específico-pertencente-à-conta",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Solicitando um voto específico pertencente à conta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "solicitar um tipo \"valid\" de voto da conta",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "deve ser respondido o schema \"get-vote_id\" com status 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;deletando-um-voto-específico-pertencente-à-conta",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Deletando um voto específico pertencente à conta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "que tenha o ID de uma image",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10212:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "que tenha um voto cadastrado no thecatapi",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "deletar um tipo \"invalid\" de voto da conta",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "deve ser respondido o schema \"delete-vote\" com status 400",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "votes;deletando-um-voto-específico-pertencente-à-conta",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Deletando um voto específico pertencente à conta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "que tenha o ID de uma image",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10212:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "que tenha um voto cadastrado no thecatapi",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "deletar um tipo \"valid\" de voto da conta",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "deve ser respondido o schema \"delete-vote\" com status 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

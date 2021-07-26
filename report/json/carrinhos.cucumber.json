@@ -1,0 +1,43 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Gerenciamento do carrinho da ServeRest",
+    "line": 1,
+    "id": "gerenciamento-do-carrinho-da-serverest",
+    "tags": [],
+    "uri": "carrinhos.feature",
+    "elements": [
+      {
+        "id": "gerenciamento-do-carrinho-da-serverest;listar-produtos-do-carrinho",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Listar produtos do carrinho",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "solicitar todos os produtos de /carrinhos",
+            "result": {
+              "status": "passed",
+              "duration": 362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "deve ser respondido o schema \"get-carrinhos\" com status 200",
+            "result": {
+              "status": "failed",
+              "duration": 58000000,
+              "error_message": "Error: Contract validation error, please verify!\n    at Context.eval (https://serverest.dev/__cypress/tests?p=cypress\\support\\index.js:53:13)\nFrom previous event:\n    at Context.thenFn (https://serverest.dev/__cypress/runner/cypress_runner.js:137744:23)\n    at Context.then (https://serverest.dev/__cypress/runner/cypress_runner.js:138183:21)\n    at Context.<anonymous> (https://serverest.dev/__cypress/runner/cypress_runner.js:153308:21)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:152716:15\nFrom previous event:\n    at runCommand (https://serverest.dev/__cypress/runner/cypress_runner.js:152695:8)\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:152841:14)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:152869:16\nFrom previous event:\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:152841:34)\nFrom previous event:\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:152882:37\nFrom previous event:\n    at run (https://serverest.dev/__cypress/runner/cypress_runner.js:152875:21)\n    at $Cy.cy.<computed> [as then] (https://serverest.dev/__cypress/runner/cypress_runner.js:153348:11)\n    at Context.runnable.fn (https://serverest.dev/__cypress/runner/cypress_runner.js:153572:21)\n    at callFn (https://serverest.dev/__cypress/runner/cypress_runner.js:109330:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://serverest.dev/__cypress/runner/cypress_runner.js:109317:7)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://serverest.dev/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://serverest.dev/__cypress/runner/cypress_runner.js:149656:28)\n    at Test.Runnable.run (https://serverest.dev/__cypress/runner/cypress_runner.js:157707:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://serverest.dev/__cypress/runner/cypress_runner.js:109989:10)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:110115:12\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:109898:14)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:109908:7\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:109810:14)\n    at Hook.<anonymous> (https://serverest.dev/__cypress/runner/cypress_runner.js:109871:7)\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:159493:22)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:159520:11\nFrom previous event:\n    at onNext (https://serverest.dev/__cypress/runner/cypress_runner.js:159517:57)\n    at done (https://serverest.dev/__cypress/runner/cypress_runner.js:109270:5)\n    at callFn (https://serverest.dev/__cypress/runner/cypress_runner.js:109353:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://serverest.dev/__cypress/runner/cypress_runner.js:109317:7)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://serverest.dev/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://serverest.dev/__cypress/runner/cypress_runner.js:149656:28)\n    at Hook.Runnable.run (https://serverest.dev/__cypress/runner/cypress_runner.js:157707:13)\n    at next (https://serverest.dev/__cypress/runner/cypress_runner.js:109832:10)\n    at https://serverest.dev/__cypress/runner/cypress_runner.js:109876:5\n    at timeslice (https://serverest.dev/__cypress/runner/cypress_runner.js:103802:27)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

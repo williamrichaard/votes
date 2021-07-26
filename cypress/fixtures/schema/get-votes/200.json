@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "additionalItems": true,
+    "items": {
+        "anyOf": [
+            {
+                "type": "object",
+                "required": [
+                    "country_code",
+                    "created_at",
+                    "id",
+                    "image_id",
+                    "sub_id",
+                    "value"
+                ],
+                "properties": {
+                    "country_code": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "image_id": {
+                        "type": "string"
+                    },
+                    "sub_id": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "integer"
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}
