@@ -6,6 +6,6 @@
     "chromeWebSecurity": false,
     "numTestsKeptInMemory": 1,
     "ignoreTestFiles": "*.js",
-    "testFiles": "**/*.{feature,features}",
+    "testFiles": ["**/*.feature"],
     "screenshotsFolder": "report/screenshots"
 }
