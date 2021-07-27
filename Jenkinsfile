@@ -19,7 +19,7 @@ pipeline {
     post {
         always {
             script {
-                cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: 'reports', sortingMethod: 'ALPHABETICAL'
+                cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: 'report/json', sortingMethod: 'ALPHABETICAL'
             }
         }
     }
