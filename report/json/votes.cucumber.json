@@ -27,7 +27,7 @@
             "name": "solicitar todos os votos de um usuario usando o token \"invalid\"",
             "result": {
               "status": "passed",
-              "duration": 772000000
+              "duration": 4157000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "deve ser respondido o schema \"get-votes\" com status 401",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 55000000
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "solicitar todos os votos de um usuario usando o token \"valid\"",
             "result": {
               "status": "passed",
-              "duration": 374000000
+              "duration": 410000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "deve ser respondido o schema \"get-votes\" com status 200",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 14000000
             }
           }
         ]
@@ -102,7 +102,7 @@
             "name": "deve ser respondido o schema \"post-votes\" com status 400",
             "result": {
               "status": "passed",
-              "duration": 162000000
+              "duration": 12000000
             }
           }
         ]
@@ -122,7 +122,7 @@
             "name": "postar os votos do tipo \"valid\"",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 406000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "deve ser respondido o schema \"post-votes\" com status 200",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 11000000
             }
           }
         ]
@@ -208,7 +208,7 @@
             "name": "que tenha o ID de uma image",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10212:35)"
+              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:10212:35)\nFrom previous event:\n    at Context.thenFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:137744:23)\n    at Context.then (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:138183:21)\n    at Context.<anonymous> (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153308:21)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152716:15\nFrom previous event:\n    at runCommand (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152695:8)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152841:14)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152869:16\nFrom previous event:\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152841:34)\nFrom previous event:\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152882:37\nFrom previous event:\n    at run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152875:21)\n    at $Cy.cy.<computed> [as then] (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153348:11)\n    at Context.runnable.fn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153572:21)\n    at callFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109330:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109317:7)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:149656:28)\n    at Test.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:157707:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109989:10)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:110115:12\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109898:14)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109908:7\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109810:14)\n    at Hook.<anonymous> (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109871:7)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159493:22)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159520:11\nFrom previous event:\n    at onNext (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159517:57)\n    at done (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109270:5)\n    at callFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109353:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109317:7)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:149656:28)\n    at Hook.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:157707:13)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109832:10)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109876:5\n    at timeslice (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:103802:27)"
             }
           },
           {
@@ -255,7 +255,7 @@
             "name": "que tenha o ID de uma image",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress/integration/spec/votes.feature:10212:35)"
+              "error_message": "TypeError: _thecat.TheCat.pegar_id_imagem(...).then is not a function\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:115:36)\n    at Context.resolveAndRunStepDefinition (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:10883:9)\n    at Context.eval (https://api.thecatapi.com/__cypress/tests?p=cypress\\integration\\spec\\votes.feature:10212:35)\nFrom previous event:\n    at Context.thenFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:137744:23)\n    at Context.then (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:138183:21)\n    at Context.<anonymous> (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153308:21)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152716:15\nFrom previous event:\n    at runCommand (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152695:8)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152841:14)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152869:16\nFrom previous event:\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152841:34)\nFrom previous event:\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152882:37\nFrom previous event:\n    at run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:152875:21)\n    at $Cy.cy.<computed> [as then] (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153348:11)\n    at Context.runnable.fn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:153572:21)\n    at callFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109330:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109317:7)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:149656:28)\n    at Test.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:157707:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109989:10)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:110115:12\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109898:14)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109908:7\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109810:14)\n    at Hook.<anonymous> (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109871:7)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159493:22)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159520:11\nFrom previous event:\n    at onNext (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159517:57)\n    at done (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109270:5)\n    at callFn (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109353:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109317:7)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159577:28\nFrom previous event:\n    at Object.onRunnableRun (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:159565:17)\n    at $Cypress.action (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:149656:28)\n    at Hook.Runnable.run (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:157707:13)\n    at next (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109832:10)\n    at https://api.thecatapi.com/__cypress/runner/cypress_runner.js:109876:5\n    at timeslice (https://api.thecatapi.com/__cypress/runner/cypress_runner.js:103802:27)"
             }
           },
           {
